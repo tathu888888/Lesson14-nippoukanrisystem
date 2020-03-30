@@ -27,6 +27,8 @@ public class EmployeeValidator {
                 errors.add(name_error);
             }
 
+            return errors;
+
     }
 
 
