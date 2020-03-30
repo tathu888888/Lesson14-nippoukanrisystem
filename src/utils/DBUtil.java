@@ -11,7 +11,7 @@ public class DBUtil {
 
 
     public static EntityManager createEntityManager() {
-        return _getEntityMAnagerFactory().createEntityManager();
+        return _getEntityManagerFactory().createEntityManager();
     }
 
 
@@ -19,6 +19,10 @@ public class DBUtil {
         if(emf == null) {
             emf = Persistence.createEntityManagerFactory(PERSISTENCE_UNIT_NAME);
         }
+
+        return emf;
     }
 
 }
+
+
