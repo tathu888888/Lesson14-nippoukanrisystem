@@ -3,6 +3,12 @@
 
 <c:import url="../layout/app.jsp">
     <c:param name="content" >
+       <c:if test="${flush != null}">
+         <div id="flush_succes"></div>
+             <c:out value="{flush]"></c:out>
+             </c:if>
+
+
       <h2>日報管理システムへようこそ</h2>
 
       </c:param>
