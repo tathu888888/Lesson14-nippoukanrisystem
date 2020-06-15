@@ -4,10 +4,12 @@
 
 <c:import url="../layout/app.jsp">
   <c:param name="content">
-    <c:if test="${flush != null}">
-    	<div id="flush_success">
-    	</div>
-    </c:if>
+          <c:if test="${flush != null}">
+            <div id="flush_success">
+                <c:out value="${flush}"></c:out>
+            </div>
+        </c:if>
+
     <h2>日報管理システム</h2>
     <h3>【自分の日報　一覧】</h3>
     <table id="report_list">
